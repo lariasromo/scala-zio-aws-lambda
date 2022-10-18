@@ -1,0 +1,21 @@
+app: zio-lambda
+service: zio-lambda
+
+provider:
+  name: aws
+  runtime: java11
+  lambdaHashingVersion: 20201221
+  memorySize: 10240
+  timeout: 900
+  environment:
+    ENV: ""
+  ecr:
+    images:
+      zio-lambda-image:
+        path: ./
+        file: ./Dockerfile
+
+functions:
+  zio-lambda-function:
+    image:
+      name: zio-lambda-image
