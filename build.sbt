@@ -12,6 +12,7 @@ val deps = Seq(
   "dev.zio" %% "zio" % "2.0.2",
   "dev.zio" %% "zio-test"     % "2.0.2",
   "dev.zio" %% "zio-test-sbt" % "2.0.2",
+  "dev.zio" %% "zio-s3" % "0.3.7",
 )
 
 libraryDependencies ++= deps
